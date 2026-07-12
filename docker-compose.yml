@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: hola-mundo-flask:latest
+    ports:
+      - "5000:5000"
+    container_name: hola-mundo-flask
+    restart: unless-stopped
